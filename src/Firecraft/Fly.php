@@ -4,22 +4,22 @@
  namespace Firecraft;
  
  
-use pocketmine+AFw-event+AFw-Listener;
-use pocketmine+AFw-utils+AFw-TextFormat;
-use pocketmine+AFw-plugin+AFw-PluginBase;
-use pocketmine+AFw-plugin+AFw-Plugin;
-use pocketmine+AFw-command+AFw-Command;
-use pocketmine+AFw-command+AFw-CommandSender;
-use pocketmine+AFw-Player;
-use pocketmine+AFw-Server;
-use pocketmine+AFw-utils+AFw-Config;
+use pocketmine\event\Listener;
+use pocketmine\utils\TextFormat;
+use pocketmine\plugin\PluginBase;
+use pocketmine\plugin\Plugin;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\Player;
+use pocketmine\Server;
+use pocketmine\utils\Config;
  
  
  
  class Main extends PluginBase implements Listener {
    
    public $config;
-   public const PREFIX = "+AKc-r[+AKc-2Firecraft +AKc-r] +AKc-7";
+   public const PREFIX = "§r[§2Firecraft §r] §7";
    
       public function onEnable() {
     $this->getServer()->getPluginManager()->registerEvents($this, $this); 
@@ -32,6 +32,8 @@ use pocketmine+AFw-utils+AFw-Config;
  
  public function onCommand(CommandSender $sender, Commandg $cmd, string $label, array $args): bool 
          }
-         if ($cmd->getName() == "DC") {
-        $sender->sendMessage("+AKc-cUnser Eignder Discord-Server : https://discord.gg/9b4u2nr")
+        { if ($cmd->getName() == "DC") {
+        $sender->sendMessage("§cUnser Eignder Discord-Server : https://discord.gg/9b4u2nr") }
    
+           Return False;
+//Ende
