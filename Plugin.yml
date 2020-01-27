@@ -1,5 +1,5 @@
 name: Firecraft
-api: [3.0.0, 4.0.0]
+api: [3.8.1]
 version: 1.0.0
 main: Crow\Firecraft/Main
 author: Crow	
@@ -7,6 +7,6 @@ load: STARTUP
 commands:
     DC:
     description:
-    usage: "/Fly"
+    usage: "/DC"
     permmission: DC.use
     usage: "/DC"
